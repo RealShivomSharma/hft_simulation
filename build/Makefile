@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mock_market_data_feed.o: src/mock_market_data_feed.cpp.o
+.PHONY : src/mock_market_data_feed.o
+
+# target to build an object file
+src/mock_market_data_feed.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.o
+.PHONY : src/mock_market_data_feed.cpp.o
+
+src/mock_market_data_feed.i: src/mock_market_data_feed.cpp.i
+.PHONY : src/mock_market_data_feed.i
+
+# target to preprocess a source file
+src/mock_market_data_feed.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.i
+.PHONY : src/mock_market_data_feed.cpp.i
+
+src/mock_market_data_feed.s: src/mock_market_data_feed.cpp.s
+.PHONY : src/mock_market_data_feed.s
+
+# target to generate assembly for a file
+src/mock_market_data_feed.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.s
+.PHONY : src/mock_market_data_feed.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mock_market_data_feed.o"
+	@echo "... src/mock_market_data_feed.i"
+	@echo "... src/mock_market_data_feed.s"
 .PHONY : help
 
 

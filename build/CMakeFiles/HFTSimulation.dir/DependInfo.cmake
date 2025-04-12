@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/shivom/hft_simulation/src/main.cpp" "CMakeFiles/HFTSimulation.dir/src/main.cpp.o" "gcc" "CMakeFiles/HFTSimulation.dir/src/main.cpp.o.d"
+  "/Users/shivom/hft_simulation/src/mock_market_data_feed.cpp" "CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.o" "gcc" "CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
