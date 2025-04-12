@@ -2,8 +2,10 @@
 #include <chrono>
 #include <thread>
 #include "market_data_feed.h"
+#include "order_book.h"
 
 IMarketDataFeed* createMarketDataFeed();
+IOrderBook* createOrderBook();
 int main() {
 
     IMarketDataFeed* feed = createMarketDataFeed();
@@ -30,6 +32,20 @@ int main() {
 
     std::cout << "Market Data feed simulation ended." << "\n";
 
+    IOrderBook* orderBook = createOrderBook();
+
+    // Test orders 
+    
+    orderBook->addOrder({"order1", "AAPL", OrderSide::BUY, 150.0, 50, 0});
+    orderBook->addOrder({"order2", "AAPL", OrderSide::SELL, 148.0, 20, 0});
+    orderBook->addOrder({"order1", "AAPL", OrderSide::BUY, 151.0, 30, 0});
+
+    orderBook->printOrderBook();
+
+    orderBook->addOrder({"order4", "AAPL", OrderSide::BUY, 148.0, 20, 0});
+    orderBook->printOrderBook();
+
+    delete orderBook;
     return 0;
 
 }

@@ -177,6 +177,30 @@ src/mock_market_data_feed.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.s
 .PHONY : src/mock_market_data_feed.cpp.s
 
+src/simple_order_book.o: src/simple_order_book.cpp.o
+.PHONY : src/simple_order_book.o
+
+# target to build an object file
+src/simple_order_book.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/simple_order_book.cpp.o
+.PHONY : src/simple_order_book.cpp.o
+
+src/simple_order_book.i: src/simple_order_book.cpp.i
+.PHONY : src/simple_order_book.i
+
+# target to preprocess a source file
+src/simple_order_book.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/simple_order_book.cpp.i
+.PHONY : src/simple_order_book.cpp.i
+
+src/simple_order_book.s: src/simple_order_book.cpp.s
+.PHONY : src/simple_order_book.s
+
+# target to generate assembly for a file
+src/simple_order_book.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/simple_order_book.cpp.s
+.PHONY : src/simple_order_book.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/mock_market_data_feed.o"
 	@echo "... src/mock_market_data_feed.i"
 	@echo "... src/mock_market_data_feed.s"
+	@echo "... src/simple_order_book.o"
+	@echo "... src/simple_order_book.i"
+	@echo "... src/simple_order_book.s"
 .PHONY : help
 
 
