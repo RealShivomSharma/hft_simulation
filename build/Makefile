@@ -201,6 +201,30 @@ src/simple_order_book.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/simple_order_book.cpp.s
 .PHONY : src/simple_order_book.cpp.s
 
+src/trading_strategy.o: src/trading_strategy.cpp.o
+.PHONY : src/trading_strategy.o
+
+# target to build an object file
+src/trading_strategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/trading_strategy.cpp.o
+.PHONY : src/trading_strategy.cpp.o
+
+src/trading_strategy.i: src/trading_strategy.cpp.i
+.PHONY : src/trading_strategy.i
+
+# target to preprocess a source file
+src/trading_strategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/trading_strategy.cpp.i
+.PHONY : src/trading_strategy.cpp.i
+
+src/trading_strategy.s: src/trading_strategy.cpp.s
+.PHONY : src/trading_strategy.s
+
+# target to generate assembly for a file
+src/trading_strategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HFTSimulation.dir/build.make CMakeFiles/HFTSimulation.dir/src/trading_strategy.cpp.s
+.PHONY : src/trading_strategy.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/simple_order_book.o"
 	@echo "... src/simple_order_book.i"
 	@echo "... src/simple_order_book.s"
+	@echo "... src/trading_strategy.o"
+	@echo "... src/trading_strategy.i"
+	@echo "... src/trading_strategy.s"
 .PHONY : help
 
 

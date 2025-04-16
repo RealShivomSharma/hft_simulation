@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/HFTSimulation.dir/src/mock_market_data_feed.cpp.o.d"
   "CMakeFiles/HFTSimulation.dir/src/simple_order_book.cpp.o"
   "CMakeFiles/HFTSimulation.dir/src/simple_order_book.cpp.o.d"
+  "CMakeFiles/HFTSimulation.dir/src/trading_strategy.cpp.o"
+  "CMakeFiles/HFTSimulation.dir/src/trading_strategy.cpp.o.d"
   "HFTSimulation"
   "HFTSimulation.pdb"
 )
